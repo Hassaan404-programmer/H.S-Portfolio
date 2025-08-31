@@ -1,0 +1,137 @@
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: 0.5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Landing Section */
+#landing {
+  color: #fff;
+  overflow: hidden;
+}
+
+#landing-bg {
+  background: linear-gradient(135deg, #000, #333); /* fallback */
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px) brightness(0.4); /* blur + darken */
+  z-index: 0;
+}
+
+.landing-content {
+  position: relative;
+  z-index: 2; /* keep text & photo above background */
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.landing-text h1 {
+  font-size: 3.5rem;
+}
+.landing-text h4 {
+  color: #fff !important;
+}
+
+/* Dynamic Text Animation */
+.dynamic-text {
+  color: #ae0606 !important;
+  display: inline-block;
+  border-right: 2px solid #dd7105 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blinkCursor 0.8s infinite;
+}
+.iam-red {
+  color: #e63946 !important; /* nice professional red */
+  font-weight: bold;
+}
+
+#dynamic-role {
+  color: #ffffff;   /* pure white */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000; /* soft shadow for visibility */
+}
+
+@keyframes blinkCursor {
+  50% { border-color: transparent; }
+}
+
+/* Responsive Fix */
+@media (max-width: 991px) {
+  .landing-content {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .landing-photo {
+    order: -1; /* move photo on top */
+  }
+  .landing-text h1 {
+    font-size: 2.5rem;
+  }
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+  transition: all 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #00bcd4;
+  text-shadow: 0px 0px 8px #00bcd4;
+}
+
+/* Cards */
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Buttons */
+.btn {
+  transition: all 0.3s;
+  border-radius: 25px;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hover-card {
+  transition: all 0.3s ease-in-out;
+}
+.hover-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}

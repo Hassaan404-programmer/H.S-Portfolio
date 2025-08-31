@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hassaan Sikander - Portfolio</title>
+
+  <!--Devicons-->>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome (Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  
+<!-- Landing Section -->
+<section id="landing" class="vh-100 d-flex align-items-center justify-content-center px-5 position-relative">
+  
+  <!-- Background Layer -->
+  <div id="landing-bg" class="position-absolute top-0 start-0 w-100 h-100"></div>
+  
+  <!-- Content Layer -->
+  <div class="landing-content d-flex align-items-center justify-content-between w-100 flex-lg-row flex-column-reverse text-center text-lg-start">
+    
+    <!-- Left Side Text -->
+    <div class="landing-text me-lg-5" data-aos="fade-right">
+      <h1 class="fw-bold display-3">Hassaan Sikander</h1>
+      <h4 class="text-secondary">University Of Engineering And Technology, Lahore</h4>
+      <h4 class="text-secondary">BS Computer Science</h4>
+      <h3 class="fw-bold mt-3">
+        I am <span id="dynamic-role" class="text-danger"></span>
+      </h3>
+    </div>
+
+    <!-- Profile Image (Right on desktop, top on mobile) -->
+    <div class="landing-photo mb-4 mb-lg-0" data-aos="fade-left">
+      <img id="profile-img" src="assets/hassaan.jpg" alt="Profile" class="img-fluid rounded-circle shadow-lg profile-img">
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#landing">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li> 
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Skills Section ===== -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" data-aos="zoom-in">Skills</h2>
+
+    <!-- Nav Tabs -->
+    <ul class="nav nav-pills justify-content-center mb-5" id="skillsTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="soft-tab" data-bs-toggle="pill" data-bs-target="#soft" type="button" role="tab">
+          <i class="fas fa-users me-2"></i>Soft Skills
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="technical-tab" data-bs-toggle="pill" data-bs-target="#technical" type="button" role="tab">
+          <i class="fas fa-laptop-code me-2"></i>Technical Skills
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="skillsTabContent">
+
+      <!-- Soft Skills -->
+      <div class="tab-pane fade show active" id="soft" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card shadow-sm h-100 p-3 border-0">
+              <div class="icon-circle bg-primary text-white mx-auto mb-3"><i class="fas fa-lightbulb"></i></div>
+              <h6>Problem Solving</h6>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card shadow-sm h-100 p-3 border-0">
+              <div class="icon-circle bg-primary text-white mx-auto mb-3"><i class="fas fa-clock"></i></div>
+              <h6>Time Management</h6>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card shadow-sm h-100 p-3 border-0">
+              <div class="icon-circle bg-primary text-white mx-auto mb-3"><i class="fas fa-comments"></i></div>
+              <h6>Effective Communication</h6>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card shadow-sm h-100 p-3 border-0">
+              <div class="icon-circle bg-primary text-white mx-auto mb-3"><i class="fas fa-users-cog"></i></div>
+              <h6>Team Collaboration</h6>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card shadow-sm h-100 p-3 border-0">
+              <div class="icon-circle bg-primary text-white mx-auto mb-3"><i class="fas fa-sync-alt"></i></div>
+              <h6>Adaptability</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="tab-pane fade" id="technical" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+              <div class="icon-circle bg-success text-white mx-auto mb-3"><i class="fas fa-code"></i></div>
+              <h5 class="fw-bold">Programming</h5>
+              <p class="text-muted small">C++, Python</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+            <i class="fas fa-chart-pie fa-2x text-info mb-3"></i>
+            <h5 class="fw-bold">Data Visualization</h5>
+            <p class="text-muted small">Transforming raw data into stories & crafting polished dashboards.</p>
+          </div>
+        </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+              <div class="icon-circle bg-info text-white mx-auto mb-3"><i class="fas fa-globe"></i></div>
+              <h5 class="fw-bold">Web Development</h5>
+              <p class="text-muted small">HTML5, CSS3, JavaScript, Bootstrap, PHP (Basic)</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+              <div class="icon-circle bg-warning text-white mx-auto mb-3"><i class="fas fa-mobile-alt"></i></div>
+              <h5 class="fw-bold">Mobile Development</h5>
+              <p class="text-muted small">Flutter, Dart, Firebase</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+              <div class="icon-circle bg-danger text-white mx-auto mb-3"><i class="fas fa-database"></i></div>
+              <h5 class="fw-bold">Databases</h6>
+              <p class="text-muted small">MySQL, Firebase, PostgreSQL</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+              <div class="icon-circle bg-secondary text-white mx-auto mb-3"><i class="fas fa-tools"></i></div>
+              <h5 class="fw-bold">Tools</h5>
+              <p class="text-muted small">Git, GitHub, VS Code, Android Studio, Looker Studio</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+              <div class="icon-circle bg-primary text-white mx-auto mb-3"><i class="fas fa-project-diagram"></i></div>
+              <h5 class="fw-bold">Concepts</h5>
+              <p class="text-muted small">OOP, DSA, REST APIs, Software Engineering</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--Interest Section-->>
+<!-- ===== Interests Section ===== -->
+<section id="interests" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Interests</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Interest Card -->
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+          <i class="fas fa-robot fa-2x text-primary mb-3"></i>
+          <h5 class="fw-bold">Machine Learning & AI</h5>
+          <p class="text-muted small">Passionate about building intelligent models & exploring AI solutions.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+          <i class="fas fa-mobile-alt fa-2x text-success mb-3"></i>
+          <h5 class="fw-bold">Mobile App Development</h5>
+          <p class="text-muted small">Love designing and coding apps with Flutter & Firebase.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+          <i class="fas fa-code fa-2x text-warning mb-3"></i>
+          <h5 class="fw-bold">Web Technologies</h5>
+          <p class="text-muted small">Enjoy building modern, responsive, and scalable web apps.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+          <i class="fas fa-lightbulb fa-2x text-info mb-3"></i>
+          <h5 class="fw-bold">Problem-Solving</h5>
+          <p class="text-muted small">Driven by curiosity to solve real-world problems with tech.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="500">
+        <div class="card shadow-sm h-100 text-center p-4 border-0 rounded-4 hover-card">
+          <i class="fas fa-chart-line fa-2x text-danger mb-3"></i>
+          <h5 class="fw-bold">Data Science</h5>
+          <p class="text-muted small">Transforming raw data into meaningful insights & dashboards.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="py-5 text-center">
+    <h2 class="fw-bold mb-4" data-aos="zoom-in">Projects</h2>
+
+<div class="row g-4">
+  <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+    <div class="card shadow-sm h-100 p-3">
+      <h5>Project 1</h5>
+      <p>A short description of your project.</p>
+      <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+      <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+  <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+    <div class="card shadow-sm h-100 p-3">
+      <h5>Project 2</h5>
+      <p>A short description of your project.</p>
+      <a href="#" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+      <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="py-5 bg-light">
+    <h2 class="fw-bold text-center mb-4" data-aos="fade-up">Contact Me</h2>
+
+<div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+  <div class="col-md-6">
+    <form>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark w-100">Send Message</button>
+    </form>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,   // Animation duration (ms)
+    once: false        // Animation runs all time
+  });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.2.1/dist/vibrant.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -27,11 +27,6 @@ This portfolio is live at:
 
 ---
 
-## 📸 Preview
-(Add a screenshot or gif of your homepage here later)  
-
----
-
 ## 👨‍💻 Author
 **Hassaan Sikander**  
 - 🎓 BS Computer Science @ UET Lahore  
